@@ -2,51 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yonatan Endalkachew - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <!-- Hero Section -->
     <div class="hero-header">
         <div class="wrapper">
             <header>
                 <div class="logo">
-                    <i class="fa-solid fa-y"></i>
+                    <i class="fa-solid fa-user"></i>
                     <div class="logo-text">Yonatan Endalkachew</div>
                 </div>
                 <nav>
                     <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span></span><span></span><span></span>
                     </div>
                     <ul class="navlinks">
                         <li><a href="#">Home</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
-
             <div class="container">
                 <div class="hero-pic">
-                    <img src="../selfportfolio/main_photo.jpg" alt="profile pic">
+                    <img src="https://raw.githubusercontent.com/yoniendalk/selfportfolio/main/main_photo.jpg" alt="profile pic">
                 </div>
                 <div class="hero-text">
                     <h5>Hi, I'm <span class="input">Frontend Developer</span></h5>
                     <h1>Yonatan Endalkachew</h1>
                     <p>
-                        I am a results-driven Computer Science graduate with a passion for leveraging technology to enhance business processes.
-                        With experience in digital transformation, I specialize in system optimization and innovative software solutions.
+                        Results-driven Computer Science graduate passionate about leveraging technology for business transformation.
                     </p>
                     <div class="btn-group">
-                        <!-- Updated Button with CV Download -->
-                        <a href="../yoni/cv.jpg" download class="btn active">Download CV</a>
+                        <a href="https://raw.githubusercontent.com/yoniendalk/selfportfolio/main/cv.jpg" download class="btn active">Download CV</a>
                         <a href="https://web.facebook.com/officialyonatanendalkachew" class="btn">Contact</a>
                     </div>
                     <div class="social">
@@ -58,105 +51,31 @@
             </div>
         </div>
     </div>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="wrapper">
-            <div class="hero-text">
-                <h5>About Me</h5>
-                <h1>Who I Am</h1>
-                <p>
-                    a passionate Frontend Developer with a degree in Computer Science. I specialize in crafting responsive and engaging web applications, ensuring they provide an intuitive user experience. My expertise lies in HTML, CSS, JavaScript, and React, combined with a strong foundation in UI/UX Design.
-
-I am driven by the idea of digital transformation and how technology can solve real-world problems. Whether working on large-scale projects or small tasks, I always strive for excellence and continuous learning to keep up with the latest trends and technologies in the ever-evolving tech world.
-
-When I'm not coding, you can find me exploring new design concepts, experimenting with creative web layouts, or collaborating with other tech enthusiasts to innovate and solve challenges.
-                </p>
-                <div class="btn-group">
-                    <a href="#" class="btn active">Home</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="wrapper">
-            <div class="hero-text">
-                <h5>Work Experience</h5>
-                <h1>Digitalization Specialist</h1>
-                <p>
-                    ✅ Led digital transformation initiatives to modernize academic and administrative operations.<br />
-                    ✅ Developed and implemented innovative digital solutions to enhance efficiency.<br />
-                    ✅ Provided technical training and support to staff and faculty.<br />
-                    ✅ Designed and optimized database systems for streamlined data management.
-                </p>
-                <div class="btn-group">
-                    <a href="#" class="btn active">Home</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="wrapper">
-            <div class="hero-text">
-                <h5>Skills</h5>
-                <h1>My Expertise</h1>
-                <p>
-                    💻 Software Development & Programming<br />
-                    🌍 Digital Transformation Strategies<br />
-                    📊 Database Management & System Optimization<br />
-                    ⚡ UI/UX Design & Web Development<br />
-                    🎓 IT Support & Technical Training
-                </p>
-                <div class="btn-group">
-                    <a href="#" class="btn active">Home</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="wrapper">
-            <div class="hero-text">
-                <h5>Sample Project </h5>
-                <h1>Get In Touch</h1>
-                <p>
-                    Reach out to me via email or connect with me on LinkedIn and GitHub. I look forward to hearing from you!
-                </p>
-                <div class="btn-group">
-                    <a href="https://marioimportexport.com/" class="btn active">Project 1</a>
-                    <a href="https://marccafe.com/" class="btn active">Project 2</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
+    
     <footer>
         <p>&copy; 2025 Yonatan Endalkachew. All Rights Reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
     </footer>
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    
     <script>
         var togglebtn = document.querySelector(".togglebtn");
         var nav = document.querySelector(".navlinks");
         togglebtn.addEventListener("click", function(){
             this.classList.toggle("click");
             nav.classList.toggle("open");
-        })
-
+        });
+        var navLinks = document.querySelectorAll(".navlinks li a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function() {
+                nav.classList.remove("open");
+                togglebtn.classList.remove("click");
+            });
+        });
         var typed = new Typed(".input", {
             strings: ["Frontend Developer", "UX Designer", "Web Developer"],
             typeSpeed: 70,
             backSpeed: 55,
             loop: true
-        })
+        });
     </script>
 </body>
 </html>
